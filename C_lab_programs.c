@@ -1,24 +1,26 @@
 #include <stdio.h>
-void main()
+int main()
 {
-int a,b,c;
-printf("Enter the three numbers");
-scanf("%d%d%d",&a,&b,&c);
-if(a>b)
+int marks;
+printf("Enter your marks");
+scanf("%d",&marks);
+
+
+if (marks>=60)
 {
-    if (a>c)
-    printf("%d is the greatest",a);
-
-else
-
-    printf("%d is the greatest",c);
+printf("First Division!!");
 }
-else
+else if (marks>=50 && marks<60)
 {
-if (b>c)
-printf("%d is the greatest",b);
-else
-printf("%d is the greatest",c);
+    printf("Second Division!!");
 }
+else if (marks>=40 && marks<50)
+{
+    printf("Third Division!!");
 }
-
+else if (marks<40)
+{
+    printf("Fail!!");
+}
+return 0;
+}
