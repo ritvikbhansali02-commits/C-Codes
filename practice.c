@@ -1,17 +1,19 @@
 #include<stdio.h>
 int main()
 {
-int age;
-printf("Enter your age to check voting eligiblity");
-scanf("%d",&age);
-if (age>=0)
+    int a,b;
+    printf("Enter the first number:");
+    scanf("%d",&a);
+    printf("Enter the second number:");
+    scanf("%d",&b);
+    if (a>b)
+  {
+    printf("%d is greater than than %d",a,b);
+  }
+    else if  (b>a)
 {
-    if (age>=18)
-    printf("You are Eligible to vote");
-}
+    printf("%d is greater than %d",b,a);
+}  
 else
-{
-printf("You are not Eligible to vote");
-}
-return 0;
+printf("%d is equal to %d",a,b);
 }
